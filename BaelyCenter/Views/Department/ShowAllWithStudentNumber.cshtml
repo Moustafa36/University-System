@@ -1,0 +1,49 @@
+﻿@model IEnumerable<BaelyCenter.ViewModels.DeparmentwithStudentNumberViewModel>
+
+@{
+    ViewData["Title"] = "ShowAllWithStudentNumber";
+}
+
+<h1>ShowAllWithStudentNumber</h1>
+
+<p>
+    <a asp-action="Add">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.DepartmentName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InstructorName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentNumber)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.DepartmentName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InstructorName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentNumber)
+            </td>
+            
+        </tr>
+}
+    </tbody>
+
+</table>
+<div>
+    <a asp-action="ShowAll">Back to List</a>
+</div>

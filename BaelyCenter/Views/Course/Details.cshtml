@@ -1,0 +1,60 @@
+﻿@model BaelyCenter.Models.Course
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Course</h4>
+    <hr />
+    <dl class="row">
+  
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CourseDegree)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CourseDegree)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MinDegree)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MinDegree)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Dept_Id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Dept.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Inst_Id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Inst.Name)
+        </dd>
+    </dl>
+</div>
+<div>
+   
+    <a class="btn btn-outline-primary" asp-action="Showall" >Back to List</a>
+    <a class="btn btn-outline-danger" asp-action="Delete" onclick="ConfirmDelete()" asp-route-Id="@Model.Id" >Delete</a>
+    <a class="btn btn-outline-success" asp-action="Edit" asp-route-Id="@Model.Id"  asp-route-DeptId="@Model.Dept_Id"> Edit</a> 
+
+
+</div>
+<script>
+    function ConfirmDelete()
+    {
+        var Accept = confirm("Are you sure ");
+        if (!Accept) event.preventDefault();
+        }
+</script>

@@ -1,0 +1,56 @@
+﻿@model IEnumerable<BaelyCenter.Models.Course>
+
+@{
+    ViewData["Title"] = "MyCourses";
+}
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm-6">
+            <div class="card text-center" style="width: 18rem;">
+                <i class="fas fa-chalkboard-teacher mt-2" style="font-size:100px"></i>
+
+                <div class="card-body">
+
+                    <a class="btn btn-danger" href="/Instructor/Details/@ViewData["InstructorId"]">yourInfo</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <h1 class="text-center text-muted pb-3">your courses</h1>
+            <table class="table table-borderless tab-center ">
+                <thead>
+                    <tr>
+                        <th scope="col" > Course </th>
+                        <th scope="col" > Degree </th>
+                        <th scope="col" > MinDegree </th>
+                        <th scope="col" > Department </th>
+                        <th scope="col" > Number of Students </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach( Course item in Model)
+                    {
+                    <tr>
+                        <td> @item.Name </td>
+                        <td> @item.CourseDegree</td>
+                        <td> @item.MinDegree</td>
+                        <td> @item.Dept.Name</td>
+                        <td> <a href="/Instructor/MyStudent/@item.Id"> @item.StudentCourse.ToList().Count() </a></td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+</div>

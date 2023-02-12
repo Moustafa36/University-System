@@ -1,0 +1,56 @@
+﻿@model BaelyCenter.Models.Department
+
+@{
+    ViewData["Title"] = "ADD";
+}
+
+@{
+    SelectList InstructorList;
+    if(Model==null)
+{
+    InstructorList = new SelectList(ViewBag.instructorsList,"Id","Name"); 
+}
+else {  InstructorList = new SelectList(ViewBag.instructorsList,"Id","Name",Model.Manager_Id);  }
+}
+<h1>ADD</h1>
+
+<h4>Department</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            @if (Model.Id != 0)
+            {
+                <input type="hidden" asp-for="Id">
+            }
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Manager_Id" class="control-label">Manager</label>
+                <select asp-for="Manager_Id" class="form-control" asp-items="InstructorList">
+                    <option disabled selected> ---Select Maneger---</option>
+                </select>
+                <span asp-validation-for="Manager_Id" class="text-danger"></span>
+            </div>
+           
+            
+            
+         
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="ShowAll">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

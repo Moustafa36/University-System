@@ -1,0 +1,56 @@
+﻿@model IEnumerable<BaelyCenter.Models.StudentCourse>
+
+@{
+    ViewData["Title"] = "ShowAll";
+}
+
+<h1>All Students in Course</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-outline-primary">Assign Student to Course</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Student_Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Course_Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Degree)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.student.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course.Name)
+            </td>
+                <td> @if (item.Degree == 0) { <p>N/A</p> }
+                    else{@Html.DisplayFor(modelItem => item.Degree)}
+            </td>
+            <td>
+               @* @Html.ActionLink("Edit", "Edit", new {  }) *@
+              @*  <a class="btn btn-outline-primary" asp-action="Details" asp-route-CourseId="@item.Course_Id" 
+                asp-route-StudentId="@item.Student_Id">Details</a>*@ 
+                <a onclick="ConfirmDelete()" class="btn btn-outline-danger"
+                    asp-action="Drop" asp-route-CourseId="@item.Course_Id" asp-route-StudentId="@item.Student_Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<script>
+function ConfirmDelete() 
+{
+    var Accept = confirm("Are you Sure Delete ");
+    if (!Accept) { event.preventDefault(); }
+}
+</script>

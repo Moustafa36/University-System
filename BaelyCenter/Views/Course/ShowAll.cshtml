@@ -1,0 +1,68 @@
+﻿@model IEnumerable<BaelyCenter.Models.Course>
+
+@{
+    ViewData["Title"] = "ShowAll";
+}
+
+<h1>ShowAll</h1>
+
+<p>
+    <a asp-action="SelectDepartment">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CourseDegree)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MinDegree)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dept_Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Inst_Id)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model) {
+            <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td style="color:green">
+                @Html.DisplayFor(modelItem => item.CourseDegree)
+            </td>
+            <td style="color:red">
+                @Html.DisplayFor(modelItem => item.MinDegree)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dept.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Inst.Name)
+            </td>
+            <td>
+                <a class="btn btn-outline-success" asp-action="Edit" asp-route-Id="@item.Id"  asp-route-DeptId="@item.Dept_Id"> Edit</a> |
+                @Html.ActionLink("Details", "Details", new { id = item.Id},new{@class="btn btn-outline-success"}) |
+                <a class="btn btn-outline-danger" asp-action="Delete" onclick="ConfirmDelete()" asp-route-Id="@item.Id" >Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<script>
+    function ConfirmDelete()
+    {
+        var Accept = confirm("Are you sure ");
+        if (!Accept) event.preventDefault();
+        }
+</script>

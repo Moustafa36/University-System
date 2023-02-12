@@ -1,0 +1,128 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BaelyCenter
+build_property.RootNamespace = BaelyCenter
+build_property.ProjectDir = E:\ITI\ITI part 2\mvc\MVC TRAINING\BaelyCenter - Copy\BaelyCenter\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\ITI\ITI part 2\mvc\MVC TRAINING\BaelyCenter - Copy\BaelyCenter
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/Course/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/Course/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/Course/SelectDepartment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXFNlbGVjdERlcGFydG1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/Course/ShowAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXFNob3dBbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/Department/ADD.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxBREQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/Department/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/Department/ShowAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxTaG93QWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/Department/ShowAllWithStudentNumber.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxTaG93QWxsV2l0aFN0dWRlbnROdW1iZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/Instructor/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/Instructor/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/Instructor/MyCourses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxNeUNvdXJzZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/Instructor/MyStudent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxNeVN0dWRlbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/Instructor/PartialViewForDepartment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxQYXJ0aWFsVmlld0ZvckRlcGFydG1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/Instructor/SetDegree.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxTZXREZWdyZWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/Instructor/ShowAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvclxTaG93QWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/StudentCourse/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudENvdXJzZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/StudentCourse/ShowAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudENvdXJzZVxTaG93QWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/Student/ADD.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxBREQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/Student/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/Student/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/Student/ShowAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxTaG93QWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ITI/ITI part 2/mvc/MVC TRAINING/BaelyCenter - Copy/BaelyCenter/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-kjougosnop

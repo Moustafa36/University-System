@@ -1,0 +1,16 @@
+﻿
+@{
+    SelectList DeptList = new SelectList(ViewBag.DepartmentList,"Id","Name");
+}
+<form method="get" asp-action="Add" > 
+    <select asp-items="DeptList" class="form-Control" name="DeptId" >
+       
+    </select>
+    
+  
+    <input type="submit" class=" btn btn-outline-primary" >
+    </form>
+<div>
+   
+    <a asp-action="Showall">Back to List</a>
+</div>

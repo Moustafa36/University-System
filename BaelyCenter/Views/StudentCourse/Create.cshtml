@@ -1,0 +1,64 @@
+﻿@model BaelyCenter.Models.StudentCourse
+
+@{
+    ViewData["Title"] = "Create";
+}
+@{
+    SelectList students, courses;
+    if (Model == null)
+    {
+        students = new SelectList(ViewBag.StudentList, "Id", "Name");
+        courses = new SelectList(ViewBag.CourseList, "Id", "Name");
+    }
+    else
+    {
+        students = new SelectList(ViewBag.StudentList,"Id","Name",Model.Student_Id);
+        courses = new SelectList(ViewBag.CourseList,"Id","Name",Model.Course_Id);
+    }
+}
+
+<h1>Create</h1>
+
+<h4>Assign Student To Course</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Student_Id" class="control-label"></label>
+               <select asp-for="Student_Id" asp-items="@students">
+                    @if (Model.Student_Id == 0)
+                    {
+                    <option disabled selected >---Select Student---</option>
+                        
+                    }
+               </select>
+                <span asp-validation-for="Student_Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Course_Id" class="control-label"></label>
+                <select asp-for="Course_Id" asp-items="courses">
+                    @if (Model.Course_Id == 0)
+                    {
+                    <option disabled selected > ---Select Course---</option>
+                        
+                    }
+                </Select>
+                <span asp-validation-for="Course_Id" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="ShowAll">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

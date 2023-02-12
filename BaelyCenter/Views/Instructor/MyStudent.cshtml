@@ -1,0 +1,51 @@
+﻿@model IEnumerable<BaelyCenter.ViewModels.StudentcourseViewModel>
+
+@{
+    ViewData["Title"] = "MyStudent";
+}
+
+<h1>MyStudents</h1>
+
+
+<table class="table table-bordered text-center">
+    <thead class="text-black bg-danger">
+        <tr>
+           
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.StudentName)
+            </th>
+           
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Degree)
+            </th>
+            <th scope="col">
+                 Set Degree
+            </th>
+           
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentName)
+            </td>
+            
+            <td>
+                    @if (item.Degree == 0) {  <p> N/A</p>
+                    }
+                    else{
+                        <p style="color:@item.Color">@Html.DisplayFor(modelItem => item.Degree)</p>
+                        
+}
+            </td>
+            <td>
+                 
+                <a href="/instructor/SetDegree/?StudentId=@item.StudentId&&CourseId=@item.CourseId" > Set Degree</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<a href="/instructor/MyCourses/@ViewBag.instructorId" class="btn btn-outline-primary">  Return To MyCourses </a>
